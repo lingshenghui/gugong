@@ -1,0 +1,155 @@
+.culture-header {
+    height: 50vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url('../images/culture-banner.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 60px;
+}
+
+.culture-grid {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+.culture-section {
+    margin-bottom: 4rem;
+}
+
+.content-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    display: flex;
+    margin-top: 1.5rem;
+}
+
+.content-card img {
+    width: 40%;
+    object-fit: cover;
+}
+
+.text-content {
+    padding: 2rem;
+    flex: 1;
+}
+
+.read-more {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background 0.3s;
+}
+
+.read-more:hover {
+    background: #6B0000;
+}
+
+.culture-quotes {
+    background: #f5f5f5;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.quote-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    position: relative;
+    height: 150px;
+}
+
+.quote-card {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 0.5s ease;
+}
+
+.quote-card.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.quote-card p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.quote-card span {
+    color: #666;
+}
+
+.quote-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.quote-btn {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    background: #ddd;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.quote-btn.active {
+    background: var(--primary-color);
+}
+
+.culture-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    z-index: 1001;
+}
+
+.modal-content {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    margin: 5% auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .content-card {
+        flex-direction: column;
+    }
+
+    .content-card img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .quote-card p {
+        font-size: 1.2rem;
+    }
+} 

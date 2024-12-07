@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>故宫 - 图片图库</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="history.html">历史</a></li>
+            <li><a href="architecture.html">建筑</a></li>
+            <li><a href="artifacts.html">文物</a></li>
+            <li><a href="tour.html">导览</a></li>
+            <li><a href="culture.html">文化</a></li>
+            <li><a href="guide.html">指南</a></li>
+            <li><a href="news.html">新闻</a></li>
+            <li><a href="gallery.html">图库</a></li>
+            <li><a href="contact.html">联系</a></li>
+        </ul>
+    </nav>
+
+    <header class="gallery-header">
+        <h1>图片图库</h1>
+        <div class="gallery-filters">
+            <button class="filter-btn active" data-category="all">全部</button>
+            <button class="filter-btn" data-category="exterior">宫殿建筑</button>
+            <button class="filter-btn" data-category="interior">内部陈设</button>
+            <button class="filter-btn" data-category="cultural">文化活动</button>
+            <button class="filter-btn" data-category="scenic">四季风光</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="gallery-container">
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="exterior">
+                    <img src="images/故宫外观.jpg" alt="故宫外观" loading="lazy">
+                    <div class="item-info">
+                        <h3>故宫全景</h3>
+                        <p>拍摄于2024年初春</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="interior">
+                    <img src="images/太和殿.jpg" alt="太和殿" loading="lazy">
+                    <div class="item-info">
+                        <h3>太和殿金銮殿</h3>
+                        <p>皇帝举行大朝会的地方</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="cultural">
+                    <img src="images/宫廷活动.jpg" alt="宫廷活动" loading="lazy">
+                    <div class="item-info">
+                        <h3>宫廷文化展演</h3>
+                        <p>传统宫廷文化展示活动</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="scenic">
+                    <img src="images/日落.jpg" alt="日落" loading="lazy">
+                    <div class="item-info">
+                        <h3>故宫日落</h3>
+                        <p>夕阳下的紫禁城</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="load-more">加载更多</button>
+        </div>
+    </main>
+
+    <div class="gallery-modal">
+        <span class="close-btn">&times;</span>
+        <button class="nav-btn prev">&#10094;</button>
+        <button class="nav-btn next">&#10095;</button>
+        <div class="modal-content">
+            <img src="" alt="">
+            <div class="modal-info">
+                <h3></h3>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>版权所有 © 2024 故宫</p>
+    </footer>
+
+    <script src="js/common.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html> 

@@ -1,0 +1,156 @@
+.page-header {
+    height: 40vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url('../images/artifacts-banner.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 60px;
+}
+
+.category-filter {
+    margin-top: 2rem;
+}
+
+.filter-btn {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 8px 16px;
+    margin: 0 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.filter-btn.active {
+    background: white;
+    color: var(--primary-color);
+}
+
+.artifacts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.artifact-item {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.artifact-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.artifact-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    color: white;
+    padding: 1rem;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+}
+
+.artifact-item:hover {
+    transform: translateY(-5px);
+}
+
+.artifact-item:hover img {
+    transform: scale(1.1);
+}
+
+.artifact-item:hover .artifact-info {
+    transform: translateY(0);
+}
+
+.view-btn {
+    display: inline-block;
+    background: var(--primary-color);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.artifact-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    z-index: 1001;
+}
+
+.modal-content {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    margin: 5% auto;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-image {
+    width: 100%;
+    height: 400px;
+}
+
+.modal-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.modal-info {
+    padding: 2rem;
+}
+
+.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1002;
+}
+
+@media (max-width: 768px) {
+    .category-filter {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .modal-content {
+        margin: 10% auto;
+    }
+
+    .modal-image {
+        height: 300px;
+    }
+} 

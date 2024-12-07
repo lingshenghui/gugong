@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>布达拉宫 - 新闻资讯</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/news.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="history.html">历史</a></li>
+            <li><a href="architecture.html">建筑</a></li>
+            <li><a href="artifacts.html">文物</a></li>
+            <li><a href="tour.html">导览</a></li>
+            <li><a href="culture.html">文化</a></li>
+            <li><a href="guide.html">指南</a></li>
+            <li><a href="news.html">新闻</a></li>
+            <li><a href="gallery.html">图库</a></li>
+            <li><a href="contact.html">联系</a></li>
+        </ul>
+    </nav>
+
+    <header class="news-header">
+        <h1>新闻资讯</h1>
+    </header>
+
+    <main>
+        <div class="news-container">
+            <div class="news-filters">
+                <button class="filter-btn active" data-category="all">全部</button>
+                <button class="filter-btn" data-category="notice">通知公告</button>
+                <button class="filter-btn" data-category="activity">活动信息</button>
+                <button class="filter-btn" data-category="media">媒体报道</button>
+            </div>
+
+            <div class="news-grid">
+                <article class="news-card" data-category="notice">
+                    <div class="news-image">
+                        <img src="images/参观通知.jpg" alt="参观通知">
+                        <span class="news-tag">通知公告</span>
+                    </div>
+                    <div class="news-content">
+                        <h2>故宫2024年春节期间参观安排</h2>
+                        <p class="news-date">2024-01-15</p>
+                        <p class="news-excerpt">春节期间（2024年2月9日-2月17日）故宫将延长开放时间...</p>
+                        <button class="read-more">阅读全文</button>
+                    </div>
+                </article>
+
+                <article class="news-card" data-category="activity">
+                    <div class="news-image">
+                        <img src="images/文化活动.jpg" alt="文化活动">
+                        <span class="news-tag">活动信息</span>
+                    </div>
+                    <div class="news-content">
+                        <h2>2024年新年祈福法会活动预告</h2>
+                        <p class="news-date">2024-01-10</p>
+                        <p class="news-excerpt">故宫将于藏历新年期间举办传统祈福法会...</p>
+                        <button class="read-more">阅读全文</button>
+                    </div>
+                </article>
+
+                <article class="news-card" data-category="media">
+                    <div class="news-image">
+                        <img src="images/媒体报道.jpg" alt="媒体报道">
+                        <span class="news-tag">媒体报道</span>
+                    </div>
+                    <div class="news-content">
+                        <h2>故宫文物修复工作获国际赞誉</h2>
+                        <p class="news-date">2024-01-05</p>
+                        <p class="news-excerpt">近日，故宫的文物修复工作受到国际专家高度评价...</p>
+                        <button class="read-more">阅读全文</button>
+                    </div>
+                </article>
+            </div>
+
+            <div class="pagination">
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <span>...</span>
+                <button class="page-btn">10</button>
+            </div>
+        </div>
+    </main>
+
+    <div class="news-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2></h2>
+            <div class="modal-info">
+                <span class="modal-date"></span>
+                <span class="modal-category"></span>
+            </div>
+            <div class="modal-body"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>版权所有 © 2024 布达拉宫</p>
+    </footer>
+
+    <script src="js/common.js"></script>
+    <script src="js/news.js"></script>
+</body>
+</html> 

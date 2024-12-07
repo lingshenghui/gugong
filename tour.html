@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>布达拉宫 - 虚拟导览</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/tour.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="history.html">历史</a></li>
+            <li><a href="architecture.html">建筑</a></li>
+            <li><a href="artifacts.html">文物</a></li>
+            <li><a href="tour.html">导览</a></li>
+            <li><a href="culture.html">文化</a></li>
+            <li><a href="guide.html">指南</a></li>
+            <li><a href="news.html">新闻</a></li>
+            <li><a href="gallery.html">图库</a></li>
+            <li><a href="contact.html">联系</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="tour-container">
+            <div class="location-selector">
+                <h2>选择参观位置</h2>
+                <div class="location-buttons">
+                    <button class="location-btn active" data-location="entrance">正门广场</button>
+                    <button class="location-btn" data-location="white-palace">白宫</button>
+                    <button class="location-btn" data-location="red-palace">红宫</button>
+                    <button class="location-btn" data-location="garden">空行母园</button>
+                </div>
+            </div>
+
+            <div class="view-container">
+                <div class="panorama-view">
+                    <img src="images/布达拉宫全景.jpg" alt="布达拉宫全景" id="tourImage">
+                    <div class="navigation-controls">
+                        <button class="nav-btn left">←</button>
+                        <button class="nav-btn right">→</button>
+                    </div>
+                </div>
+                <div class="location-info">
+                    <h3>正门广场</h3>
+                    <p class="description">故宫正门广场气势恢宏，是游客参观的第一站。这里可以看到故宫的整体轮廓，感受其雄伟壮观。</p>
+                    <div class="tour-tips">
+                        <h4>参观提示</h4>
+                        <ul>
+                            <li>建议参观时间：30分钟</li>
+                            <li>拍照建议：早晨光线最佳</li>
+                            <li>注意事项：请保持安静，遵守秩序</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tour-map">
+            <h3>导览地图</h3>
+            <div class="map-container">
+                <img src="images/平面图.jpg" alt="布达拉宫平面图">
+                <div class="map-markers">
+                    <span class="marker" data-location="entrance" style="top: 70%; left: 50%;">1</span>
+                    <span class="marker" data-location="white-palace" style="top: 40%; left: 45%;">2</span>
+                    <span class="marker" data-location="red-palace" style="top: 30%; left: 55%;">3</span>
+                    <span class="marker" data-location="garden" style="top: 50%; left: 70%;">4</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>版权所有 © 2024 布达拉宫</p>
+    </footer>
+
+    <script src="js/common.js"></script>
+    <script src="js/tour.js"></script>
+</body>
+</html> 

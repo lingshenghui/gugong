@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>故宫 - 文物展示</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/artifacts.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="history.html">历史</a></li>
+            <li><a href="architecture.html">建筑</a></li>
+            <li><a href="artifacts.html">文物</a></li>
+            <li><a href="tour.html">导览</a></li>
+            <li><a href="culture.html">文化</a></li>
+            <li><a href="guide.html">指南</a></li>
+            <li><a href="news.html">新闻</a></li>
+            <li><a href="gallery.html">图库</a></li>
+            <li><a href="contact.html">联系</a></li>
+        </ul>
+    </nav>
+
+    <header class="page-header">
+        <h1>文物展示</h1>
+        <div class="category-filter">
+            <button class="filter-btn active" data-category="all">全部</button>
+            <button class="filter-btn" data-category="porcelain">瓷器</button>
+            <button class="filter-btn" data-category="painting">书画</button>
+            <button class="filter-btn" data-category="jade">玉器</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="artifacts-grid">
+            <div class="artifact-item" data-category="porcelain">
+                <img src="images/清代瓷器.jpg" alt="清代瓷器">
+                <div class="artifact-info">
+                    <h3>乾隆粉彩瓷器</h3>
+                    <p>清代 景德镇御窑厂</p>
+                    <span class="view-btn">查看详情</span>
+                </div>
+            </div>
+
+            <div class="artifact-item" data-category="painting">
+                <img src="images/古画.jpg" alt="古画">
+                <div class="artifact-info">
+                    <h3>千里江山图</h3>
+                    <p>北宋 王希孟</p>
+                    <span class="view-btn">查看详情</span>
+                </div>
+            </div>
+
+            <div class="artifact-item" data-category="jade">
+                <img src="images/玉器.jpg" alt="玉器">
+                <div class="artifact-info">
+                    <h3>和田玉玉玺</h3>
+                    <p>清代 乾隆年间</p>
+                    <span class="view-btn">查看详情</span>
+                </div>
+            </div>
+
+            <div class="artifact-item" data-category="porcelain">
+                <img src="images/青花瓷.jpg" alt="青花瓷">
+                <div class="artifact-info">
+                    <h3>明代青花瓷</h3>
+                    <p>明代 永乐年间</p>
+                    <span class="view-btn">查看详情</span>
+                </div>
+            </div>
+
+            <div class="artifact-item" data-category="painting">
+                <img src="images/书法.jpg" alt="书法">
+                <div class="artifact-info">
+                    <h3>御笔书法</h3>
+                    <p>清代 康熙</p>
+                    <span class="view-btn">查看详情</span>
+                </div>
+            </div>
+
+            <div class="artifact-item" data-category="jade">
+                <img src="images/玉雕.jpg" alt="玉雕">
+                <div class="artifact-info">
+                    <h3>白玉雕件</h3>
+                    <p>清代 乾隆年间</p>
+                    <span class="view-btn">查看详情</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="artifact-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-image">
+                <img src="" alt="">
+            </div>
+            <div class="modal-info">
+                <h2></h2>
+                <p class="description"></p>
+                <div class="details">
+                    <p class="era"></p>
+                    <p class="material"></p>
+                    <p class="size"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>版权所有 © 2024 故宫</p>
+    </footer>
+
+    <script src="js/common.js"></script>
+    <script src="js/artifacts.js"></script>
+</body>
+</html> 

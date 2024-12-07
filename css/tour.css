@@ -1,0 +1,150 @@
+.tour-container {
+    margin-top: 60px;
+    padding: 2rem;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.location-selector {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.location-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.location-btn {
+    padding: 10px 20px;
+    border: 2px solid var(--primary-color);
+    background: transparent;
+    color: var(--primary-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.location-btn.active {
+    background: var(--primary-color);
+    color: white;
+}
+
+.view-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.panorama-view {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.panorama-view img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.navigation-controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-btn {
+    background: rgba(0,0,0,0.6);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.nav-btn:hover {
+    background: rgba(0,0,0,0.8);
+}
+
+.location-info {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.tour-tips {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.tour-tips ul {
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.tour-map {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.map-container {
+    position: relative;
+    margin-top: 1rem;
+}
+
+.map-container img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.map-markers {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.marker {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.marker:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+    .view-container {
+        grid-template-columns: 1fr;
+    }
+
+    .panorama-view img {
+        height: 300px;
+    }
+} 

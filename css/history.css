@@ -1,0 +1,94 @@
+.page-header {
+    height: 50vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url('../images/history-banner.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 60px;
+}
+
+.timeline {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 50px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+}
+
+.timeline-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.timeline-date {
+    flex: 0 0 150px;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.timeline-content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.timeline-content img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.history-detail {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.read-more {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.read-more:hover {
+    background-color: #6B0000;
+}
+
+@media (max-width: 768px) {
+    .timeline-item {
+        flex-direction: column;
+    }
+
+    .timeline-date {
+        margin-bottom: 10px;
+    }
+
+    .timeline-content {
+        margin-left: 0;
+    }
+} 
