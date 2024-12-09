@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         'red-palace': {
             title: '雕玉',
-            description: '红宫主要用于宗教活动，内有众多佛堂和历代灵塔，是故宫最神圣的地方。',
+            description: '雕玉，是指在中国传统玉文化中，通过对玉石进行雕刻和打磨，呈现出生动形象或抽象意境的艺术形式。它是中国非物质文化遗产之一',
             images: ['images/玉雕.jpg']
         },
         'garden': {
