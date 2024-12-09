@@ -20,10 +20,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const readMoreBtn = document.querySelector('.read-more');
     const historyContent = document.querySelector('.history-content p');
     
-    const fullText = `故宫是一座宫殿式建筑群，始建于公元7世纪，是西藏历史上最宏伟的建筑之一。
-    它不仅是历代达赖喇嘛的冬宫居所，也是西藏政教合一的统治中心。
-    布达拉宫的建筑艺术是藏族古建筑艺术的精华，是藏族人民智慧的结晶。
-    经过历代的修缮扩建，布达拉宫形成了现今这般鬼斧神工的宏伟气势。`;
+    const fullText = `故宫是一座宫殿式建筑群，始建于公元7世纪，是中国历史上最宏伟的建筑之一。
+    它不仅是历代冬宫居所，也是北京政教合一的统治中心。
+    故宫的建筑艺术是藏族古建筑艺术的精华，是中华人民智慧的结晶。
+    经过历代的修缮扩建，故宫形成了现今这般鬼斧神工的宏伟气势。`;
     
     let isExpanded = false;
     
